@@ -1,6 +1,6 @@
 Welcome!
 
-Example website that is generated for a quick overview of the project can be found at folium_from_db_v9.html
+Example webpage that is generated for a quick overview of the project can be found at folium_from_db_v9.html
 
 Unfortunately, due to the 25mb file size constraints, work is need on your part to make this project functional if you would like to see a wider date range. 
 
