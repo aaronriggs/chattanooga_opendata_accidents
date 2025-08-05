@@ -2,7 +2,7 @@ Welcome!
 
 Example webpage that is generated for a quick overview of the project can be found at folium_from_db_v9.html
 
-Unfortunately, due to the 25mb file size constraints, work is need on your part to make this project functional if you would like to see a wider date range. 
+Unfortunately, due to the 25mb file size constraints of Github, work is need on your part to make this project functional if you would like to see a wider date range than what is provided in folium_from_db_v9.html. 
 
 This project contains accident data acquired from the public Chattanooga Open Data website. Accidents shown occurred between 2018 and 2025. This list may not be all inclusive and I have no way to verify data authenticity as I am not a Chattanooga City Employee nor did I collect this data.  
 
