@@ -1,8 +1,10 @@
 Welcome!
 
-Unfortunately, due to the 25mb file size constraints, work is need on your part to make this project functional. 
+Example website that is generated for a quick overview of the project can be found at folium_from_db_v9.html
 
-This contains accident data acquired from the public Chattanooga Open Data website. Accidents occurred between 2018 and 2025. 
+Unfortunately, due to the 25mb file size constraints, work is need on your part to make this project functional if you would like to see a wider date range. 
+
+This project contains accident data acquired from the public Chattanooga Open Data website. Accidents shown occurred between 2018 and 2025. This list may not be all inclusive and I have no way to verify data authenticity as I am not a Chattanooga City Employee nor did I collect this data.  
 
 The CSV provided must be converted to a sqlite database file using csv2db.py, with the generated file named "VEHICLE_INCIDENTS_CORRECTED" when prompted, THEN run with folium_from_db_v8_optimizing.py to generate the folium map showing accidents by type. 
 
@@ -19,7 +21,7 @@ I have provided folium_from_db_v9.py and folium_from_db_v9.html as proof of conc
 
 Map size generated with all entries is showing as 153mb. 
 
-Map size generated with above sql changes in file folium_from_db_v9.html  is showing as 102kb.
+Map size generated with above sql changes in file folium_from_db_v9.html is showing as 102kb.
 
 To show or hide accident categories, please go to the top right corner, and click the "stack" icon. 
 
