@@ -1,6 +1,8 @@
 # Welcome!
 
-An example of the folium webpage that is generated from this project can be found at folium_python_example.html
+An example of the folium webpage that is generated from this project can be found at folium_python_example.html or, instead of downloading anything, go check out: 
+
+https://ariggs.org/projects/coding/folium/
 
 This page contains the first 50 accidents contained in the data. 
 
