@@ -50,8 +50,8 @@ mCluster_Bicycle_F_HR = MarkerCluster(name="Bicycle Involved Fatal Hit and Run")
 conn = sqlite3.connect('VEHICLE_INCIDENTS_CORRECTED.db')
 cursor = conn.cursor()
 
-print("Time range for accident data is: 2018-01-01 00:00:00 - 2025-01-14 12:54:00")
-print("Using the format 2018-01-01 00:00:00...")
+print("Time range for accident data is: 2018-01-01 - 2025-01-14")
+print("Using the format 2018-01-01...")
 start_date = input("Enter the start date you would like to use: ")
 print("Thank you.")
 end_date = input("Enter the end date you would like to use: ")
@@ -217,6 +217,7 @@ for row in results:
 
     except:
         print("Exception occurred, error occurred in row or nulls present in requested data...")
+        print("Skipping row containing error and continuing...")
         continue
 
 # add folium map layer control
@@ -228,3 +229,4 @@ end = timer()
 print(f"Time in seconds to complete request: {end - start}")
 print("Map generation is now complete.")
 print(f"Now saving {save_file}.html")
+print("Program completed successfully!")
