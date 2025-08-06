@@ -1,27 +1,27 @@
-Welcome!
+# Welcome!
 
-Example webpage that is generated for a quick overview of the project can be found at folium_from_db_v9.html
+An example of the folium webpage that is generated from this project can be found at folium_python_example.html
 
-Unfortunately, due to the 25mb file size constraints of Github, work is need on your part to make this project functional if you would like to see a wider date range than what is provided in folium_from_db_v9.html. 
+This page contains the first 50 accidents contained in the data. 
+
+### folium_for_github.py is the main project file.  
+
+Originally, I asked that YOU run csv2db.py and folium_from_db_v8_optimizing.py to generate the necessary database and your desired map. That is no longer required. YOU should not have to do anything to make my project functional. 
+
+All you need to do is follow the requirements.txt, copy VEHICLE_INCIDENTS_CORRECTED.csv and folium_for_github.py into the same VENV, run folium_for_github.py, input the dates as requested, and you will have your own custom map! 
+
+
+# Extra Info
 
 This project contains accident data acquired from the public Chattanooga Open Data website. Accidents shown occurred between 2018 and 2025. This list may not be all inclusive and I have no way to verify data authenticity as I am not a Chattanooga City Employee nor did I collect this data.  
 
-The CSV provided must be converted to a sqlite database file using csv2db.py, with the generated file named "VEHICLE_INCIDENTS_CORRECTED" when prompted, THEN run with folium_from_db_v8_optimizing.py to generate the folium map showing accidents by type. 
+While using this program, you will be prompted to input a start and end date to allow map data to be generated. Date data starts at "2018-01-01 00:00:00" and ends at "2025-01-14 12:54:00". Using date format "2025-01-14" is sufficient to search. 
 
-This will generate a map containing all accidents within the provided data between 2018 and 2025. Accidents have been categorized by data provided within and grouped by criteria I created to better visualize the accidents. 
+If using the above dates, this will generate a map containing all accidents within the provided data between 2018 and 2025. 
 
-folium_from_db_v8_optimizing.py uses all database entries to create the map. Modification of SQL command code can isolate date ranges, such as:
+Accidents have been categorized by data provided within and grouped by criteria I created to better visualize the accidents. 
 
-command = ("SELECT Incident_Number, Incident_Date, Hit_and_Run, Involved_Fatal_Injury,"
-           "Involved_Medical_Transport, Involved_Placarded_Truck, Pedestrian_Involved, Bicycle_Involved,"
-           "Drug_Involved, Alcohol_Involved, Latitude, Longitude FROM VEHICLE_INCIDENTS_CORRECTED" WHERE "
-           "Incident_Date BETWEEN '2018-01-01 00:00:00' AND '2018-06-31 23:59:59' LIMIT 50")
-
-I have provided folium_from_db_v9.py and folium_from_db_v9.html as proof of concept of these changes.  
-
-Map size generated with all entries is showing as 153mb. 
-
-Map size generated with above sql changes in file folium_from_db_v9.html is showing as 102kb.
+Map file size generated with all entries is showing as 153mb. Using Folium Marker Clusters drastically reduces file size and loading times. 
 
 To show or hide accident categories, please go to the top right corner, and click the "stack" icon. 
 
